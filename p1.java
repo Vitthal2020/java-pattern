@@ -1,5 +1,5 @@
 
- class hollow{
+ class p1{
  	public static void main(String[]args){
 		int row=6;
 		  for(int i=1;i<=row;i++){
@@ -12,7 +12,7 @@
 			System.out.println();
 		}
 
-hollow diamond
+//hollow diamond
 int n=7;
 for(int i=0;i<n;i++){
     for(int j=0;j<n;j++){
@@ -47,23 +47,23 @@ for(int k=1;k<=n;k++){
   }
     }
  }
-Java Program to Print the Hollow Diamond Star Pattern
+//Java Program to Print the Hollow Diamond Star Pattern
 int row=11;
 for(int i=1;i<=row;i++){
     for(int j=1;j<=row;j++){
         if(i+j==7 || i-j==5 || j-i==5 || j+i==17 )
-        System.out.print("* ");
+        System.out.print("* ");                      //p==3
         else
         System.out.print(" ");
     }
     System.out.println();
 }
  
- triangle
+// triangle
 int row =7;
 for(int i=2; i<row;i++){
     for(int j=1; j<i;j++){
-        System.out.print("* ");
+        System.out.print("* ");         //p==4
     }
     System.out.println();
 }
@@ -74,7 +74,7 @@ for(int i=row; i>=1;i--){
     System.out.println();
 }
     
- intersect of two hollow triangle(infinity)
+ //intersect of two hollow triangle(infinity)
 int row=5;
 for(int i=row;i>=1;i--){
     for(int j=row;j>i;j--){
@@ -82,7 +82,7 @@ for(int i=row;i>=1;i--){
         System.out.print(" ");
     }
     for(int j=1;j<=2*i-1;j++){
-        if(j==1 || j==2*i-1 || (i==5 && j%2==1))
+        if(j==1 || j==2*i-1 || (i==5 && j%2==1))     //p==5
        System.out.print("*");
        else 
        System.out.print(" ");
@@ -106,7 +106,7 @@ for(int i=2;i<=row;i++){
  int row=7;
  for(int i=1;i<=row;i++){
     for(int j=1;j<=i;j++){
-        if(j==1 || i==j || (i==7 && j%2==1))
+        if(j==1 || i==j || (i==7 && j%2==1))  //p==6
         System.out.print("*");
         else
         System.out.print(" ");
@@ -115,17 +115,18 @@ for(int i=2;i<=row;i++){
     System.out.println();
  }
 
-hollow square
+//hollow square
 int row=7;
 for(int i=1;i<=row;i++){
     for(int j=1;j<=row;j++){
-        if((i==1 && j%2==1) || j==1  || j==7 || (i==7 && j%2==1))
+        if((i==1 && j%2==1) || j==1  || j==7 || (i==7 && j%2==1))  //p==7
         System.out.print("*");
         else
         System.out.print(" ");
     }
     System.out.println();
 }
+
 int row=7;
 for(int i=0;i<row;i++){
     for(int j=0;j<row;j++){
@@ -133,7 +134,7 @@ for(int i=0;i<row;i++){
         System.out.print("*");
         else
         System.out.print(" ");
-    }
+    }                                 //p==8
     for(int j=0;j<row;j++){
         if(j<i)
         System.out.print(" ");
@@ -167,7 +168,7 @@ for(int i=1;i<=row;i++){
 		System.out.print("* "); 		
 		else
  		System.out.print(" ");
- 	}
+ 	}                             //p==9
  	System.out.println();
  }
 
@@ -179,7 +180,7 @@ for(int i=1;i<=row;i++){
 	 String val="";
 	 for(int i=1;i<=5;i++){
 		 val=val+(char)num+"";
-		 num++;
+		 num++;                         //p==10
 		 
 	 }
 	 return val;
@@ -204,7 +205,7 @@ class p1 {
             System.out.println("Invalid room number");
             
         }
-
+                                                       //p==11
         int floor = 0;
         int roomsOnFloor;
 
@@ -221,7 +222,6 @@ class p1 {
                 System.out.println("Room is on Floor " + (floor + 1));
                 break;
             }
-
             roomNumber -= roomsOnFloor;
             floor++;
         }
